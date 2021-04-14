@@ -13,7 +13,7 @@
 
     <groupId>com.vladsch.flexmark</groupId>
     <artifactId>flexmark-java</artifactId>
-    <version>0.62.2</version>
+    <version>0.62.2-pb</version>
     <name>flexmark-java</name>
     <description>
         Java re-implementation of commonmark-java based parser, with AST reflecting source elements, full source position tracking, greater parser extensibility.
@@ -25,7 +25,7 @@
         <module>flexmark</module>
         <module>flexmark-all</module>
         <module>flexmark-osgi</module>
-        <module>flexmark-docx-converter</module>
+<!--        <module>flexmark-docx-converter</module>-->
         <module>flexmark-ext-abbreviation</module>
         <module>flexmark-ext-admonition</module>
         <module>flexmark-ext-anchorlink</module>
@@ -90,13 +90,10 @@
     </properties>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/productboardlabs/flexmark-java</url>
         </repository>
     </distributionManagement>
 
